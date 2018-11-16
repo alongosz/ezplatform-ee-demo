@@ -57,6 +57,7 @@
         "ezsystems/ezplatform-form-builder": "^1.1@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
         "ezsystems/ezplatform-automated-translation": "^2.0@rc",
+        "ezsystems/ezplatform-richtext": "^1.0@dev",
         "ezplatform-i18n/ezplatform-i18n-fr_fr": "^2.0",
         "ezplatform-i18n/ezplatform-i18n-pl_pl": "^2.0",
         "ezplatform-i18n/ezplatform-i18n-de_de": "^2.0",
