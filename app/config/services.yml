@@ -17,6 +17,9 @@ services:
         # this means you cannot fetch services directly from the container via $container->get()
         # if you need to do this, you can override this setting on individual services
         public: false
+        bind:
+            $richTextOutputConverter: '@ezrichtext.converter.output.xhtml5'
+            $richTextEditConverter: '@ezrichtext.converter.edit.xhtml5'
 
     app.query_type.menu:
         class: AppBundle\QueryType\MenuQueryType
@@ -111,3 +114,12 @@ services:
             $publishOnLastStageWorkflows: '%app.workflow.publish_on_last_stage%'
 
     AppBundle\Event\Subscriber\EndWorkflowSubscriber: ~
+
+    AppBundle\Command\ShowCommand: ~
+    AppBundle\Command\TestCommand:
+        arguments:
+            $inputXmlFilePath: '@=service("kernel").locateResource("@AppBundle/Resources/command/docbook2.xml")'
+
+    AppBundle\Command\ConvertCommand:
+        arguments:
+            $inputFixturesDirectory: '@=service("kernel").locateResource("@AppBundle/Resources/command")'

@@ -1,0 +1,20 @@
+ezpublish:
+    system:
+        admin_group:
+            fieldtypes:
+                ezrichtext:
+                    custom_styles: [style1, style2, style3, style4]
+ezrichtext:
+    custom_styles:
+        style1:
+            template: '@ezdesign/fields/ezrichtext/custom_styles/style1.html.twig'
+            inline: true
+        style2:
+            template: '@ezdesign/fields/ezrichtext/custom_styles/style2.html.twig'
+            inline: true
+        style3:
+            template: '@ezdesign/fields/ezrichtext/custom_styles/style3.html.twig'
+            inline: false
+        style4:
+            template: '@ezdesign/fields/ezrichtext/custom_styles/style4.html.twig'
+            inline: false

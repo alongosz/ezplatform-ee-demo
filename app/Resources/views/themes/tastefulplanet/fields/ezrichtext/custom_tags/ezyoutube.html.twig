@@ -5,3 +5,6 @@
             frameborder="0">
     </iframe>
 </div>
+{% if content is not empty %}
+    Content: {{ content|raw }}
+{% endif  %}

@@ -1,7 +1,7 @@
 imports:
     - { resource: image_variations.yml }
     - { resource: views.yml }
-    - { resource: fields/ezrichtext/custom_tags.yml }
+    - { resource: fields/ezrichtext/*.yml }
     - { resource: workflows.yml }
 
 ezpublish:
