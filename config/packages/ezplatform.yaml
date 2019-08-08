@@ -9,7 +9,6 @@ parameters:
 imports:
     - { resource: image_variations.yml }
     - { resource: views.yml }
-    - { resource: fields/ezrichtext/custom_tags.yml }
     - { resource: workflows.yml }
     - { resource: default_parameters.yaml }
 
