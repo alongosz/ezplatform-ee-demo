@@ -43,7 +43,7 @@ class AppKernel extends Kernel
             new EzSystems\EzSupportToolsBundle\EzSystemsEzSupportToolsBundle(),
             new EzSystems\PlatformInstallerBundle\EzSystemsPlatformInstallerBundle(),
             new EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle(),
-            new EzSystems\DoctrineSchemaBundle\DoctrineSchemaBundle(),
+            //new EzSystems\DoctrineSchemaBundle\DoctrineSchemaBundle(),
             new EzSystems\RepositoryFormsBundle\EzSystemsRepositoryFormsBundle(),
             new EzSystems\EzPlatformSolrSearchEngineBundle\EzSystemsEzPlatformSolrSearchEngineBundle(),
             new EzSystems\EzPlatformDesignEngineBundle\EzPlatformDesignEngineBundle(),

@@ -5,10 +5,10 @@
  */
 namespace AppBundle\Installer;
 
-use EzSystems\PlatformInstallerBundle\Installer\CoreInstaller;
+use EzSystems\PlatformInstallerBundle\Installer\CleanInstaller;
 use Symfony\Component\Filesystem\Filesystem;
 
-class PlatformEEDemoInstaller extends CoreInstaller
+class PlatformEEDemoInstaller extends CleanInstaller
 {
     use InstallerCommandExecuteTrait;
 
